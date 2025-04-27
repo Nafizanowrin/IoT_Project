@@ -1,6 +1,7 @@
-# IoT_Project
+# Automatic Attendance System using IoT and ML
 
-A simple Internet of Things (IoT) based project showcasing the fundamentals of device connectivity, data monitoring, and basic automation.
+A smart attendance system that automatically marks student attendance using IoT and Machine Learning.
+Live images are captured via an ESP-32 CAM module, processed through facial recognition, and attendance is recorded automatically in real-time.
 ---
 
 ## Project Structure
@@ -8,69 +9,76 @@ A simple Internet of Things (IoT) based project showcasing the fundamentals of d
 ```
 IoT_Project/
 ├── sensors/
-│   ├── temperature_sensor.py     # Simulates temperature sensor readings
-│   ├── humidity_sensor.py         # Simulates humidity sensor readings
-│   └── motion_detector.py         # Simulates motion detection
+│   ├── camera_capture.py          # Captures live images using ESP-32 CAM
+│   ├── face_preprocessing.py      # Preprocesses images for better recognition
+│   └── motion_detector.py         # Detects motion (optional for capture triggers)
 ├── controllers/
-│   └── device_controller.py       # Controls devices based on sensor data
+│   └── attendance_controller.py   # Controls attendance marking logic
 ├── data/
-│   └── data_logger.py             # Logs sensor data for analysis
-├── main.py                        # Main script to run the IoT project
-└── README.md                      # Project overview and documentation
+│   └── excel_api.py                # API for Google Sheets or Excel data integration
+├── web_interface/
+│   ├── app_server.py               # Hosts live feed and controls via browser
+│   ├── add_student.py              # Enrolls new students from web UI
+│   └── static/                     # Web assets (HTML, CSS, JS)
+├── email_alert/
+│   └── send_alert.py               # Sends email alerts for absentees
+├── main.py                         # Main script to start the system
+└── README.md                       # Project overview and documentation
+                      # Project overview and documentation
 ```
 ---
 
 ## Features
 
-- Real-time data collection from simulated sensors
-- Logging sensor data for further analysis
-- Basic control of connected devices
-- Modular codebase for easy extension
+   -  Live face detection using ESP-32 CAM.
 
+   - Automatic attendance marking using facial recognition.
+
+   -  Real-time attendance storage in Google Sheets.
+
+   - Email alerts for students with multiple consecutive absences.
+
+   -  Web-based dashboard for monitoring and manual controls.
+
+   - Dynamic student enrollment without redeploying code.
 ---
 
 ## Technologies Used
 
-- Python 3.x
-- MQTT / HTTP Protocols (depending on your simulation)
-- Sensor simulation libraries
-- Basic automation logic
+   - ESP-32 CAM Module for image capturing
+
+   - Python for backend and facial recognition
+
+   - facial recognition libraries(face_recognation library in python )
+
+   - Flask (or basic Python HTTP server) for web interface
+
+   - Excel Sheets for data storage
+
+   - SMTP (Simple Mail Transfer Protocol) for email alerts
+
+   - JavaScript + HTML/CSS for frontend browser control
 
 --- 
 
-## Setup Instructions
+## Contribution
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/Nafizanowrin/IoT_Project.git
-   cd IoT_Project
+Pull Requests are welcome! If you find any issues or improvements, feel free to fork this repo and make a Pull Request.
 
-2. Install dependencies (if any)
-    pip install -r requirements.txt
-3. Run the main script
-   python main.py
-4. Observe the outputs
-  Sensor readings will be printed/logged, and device actions will be simulated.
+Steps:
 
----
-
-## Future Improvements
-
-  - Integrate with real IoT devices (e.g., Raspberry Pi, ESP32)
-  - Add cloud connectivity (e.g., AWS IoT Core, Azure IoT Hub)
-  - Build a dashboard to visualize sensor data
-  - Implement alert notifications
-
----
-🤝 Contributing
-
-  - Contributions are welcome!
-  - Feel free to fork this repository, open an issue, or submit a pull request.
+1. Fork this repository.
+2. Clone your forked repository.
+3. Create a new branch.
+4. Commit your changes.
+5. Push to your fork.
+6. Open a Pull Request!
 
 ---
 
-🧑‍💻 Author
+## Acknowledgements
 
-   Nafiza Nowrin
-   
-   ---
+This project was completed as part of an academic course under the supervision of my class teacher.  
+Special thanks to all open-source contributors and the dataset providers.
+
+---
