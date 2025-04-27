@@ -6,20 +6,15 @@ A simple Internet of Things (IoT) based project showcasing the fundamentals of d
 
 IoT_Project/
 ├── sensors/
-│   ├── temperature_sensor.py
-│   ├── humidity_sensor.py
-│   └── motion_detector.py
+│   ├── temperature_sensor.py     # Simulates temperature sensor readings
+│   ├── humidity_sensor.py         # Simulates humidity sensor readings
+│   └── motion_detector.py         # Simulates motion detection
 ├── controllers/
-│   └── device_controller.py
+│   └── device_controller.py       # Controls devices based on sensor data
 ├── data/
-│   └── data_logger.py
-├── main.py
-└── README.md
-
-
-markdown
-Copy
-Edit
+│   └── data_logger.py             # Logs sensor data for analysis
+├── main.py                        # Main script to run the IoT project
+└── README.md                      # Project overview and documentation
 
 
 ## Features
@@ -58,8 +53,10 @@ Edit
   - Implement alert notifications
 
 🤝 Contributing
-  Contributions are welcome!
-  Feel free to fork this repository, open an issue, or submit a pull request.
+
+  - Contributions are welcome!
+  - Feel free to fork this repository, open an issue, or submit a pull request.
 
 🧑‍💻 Author
-Nafiza Nowrin
+
+   Nafiza Nowrin
