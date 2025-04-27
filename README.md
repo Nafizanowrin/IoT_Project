@@ -4,7 +4,18 @@ A simple Internet of Things (IoT) based project showcasing the fundamentals of d
 
 ## Project Structure
 
-IoT_Project/ ├── sensors/ │ ├── temperature_sensor.py │ ├── humidity_sensor.py │ └── motion_detector.py ├── controllers/ │ └── device_controller.py ├── data/ │ └── data_logger.py ├── main.py └── README.md
+IoT_Project/
+├── sensors/
+│   ├── temperature_sensor.py
+│   ├── humidity_sensor.py
+│   └── motion_detector.py
+├── controllers/
+│   └── device_controller.py
+├── data/
+│   └── data_logger.py
+├── main.py
+└── README.md
+
 
 markdown
 Copy
