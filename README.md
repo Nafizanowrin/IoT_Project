@@ -2,6 +2,7 @@
 
 A smart attendance system that automatically marks student attendance using IoT and Machine Learning.
 Live images are captured via an ESP-32 CAM module, processed through facial recognition, and attendance is recorded automatically in real-time.
+
 ---
 
 ## Project Structure
