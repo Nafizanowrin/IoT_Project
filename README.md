@@ -1,9 +1,11 @@
 # IoT_Project
 
 A simple Internet of Things (IoT) based project showcasing the fundamentals of device connectivity, data monitoring, and basic automation.
+---
 
 ## Project Structure
 
+```
 IoT_Project/
 ├── sensors/
 │   ├── temperature_sensor.py     # Simulates temperature sensor readings
@@ -15,7 +17,8 @@ IoT_Project/
 │   └── data_logger.py             # Logs sensor data for analysis
 ├── main.py                        # Main script to run the IoT project
 └── README.md                      # Project overview and documentation
-
+```
+---
 
 ## Features
 
@@ -24,12 +27,16 @@ IoT_Project/
 - Basic control of connected devices
 - Modular codebase for easy extension
 
+---
+
 ## Technologies Used
 
 - Python 3.x
 - MQTT / HTTP Protocols (depending on your simulation)
 - Sensor simulation libraries
 - Basic automation logic
+
+--- 
 
 ## Setup Instructions
 
@@ -45,6 +52,8 @@ IoT_Project/
 4. Observe the outputs
   Sensor readings will be printed/logged, and device actions will be simulated.
 
+---
+
 ## Future Improvements
 
   - Integrate with real IoT devices (e.g., Raspberry Pi, ESP32)
@@ -52,11 +61,16 @@ IoT_Project/
   - Build a dashboard to visualize sensor data
   - Implement alert notifications
 
+---
 🤝 Contributing
 
   - Contributions are welcome!
   - Feel free to fork this repository, open an issue, or submit a pull request.
 
+---
+
 🧑‍💻 Author
 
    Nafiza Nowrin
+   
+   ---
